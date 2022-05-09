@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        // function detailsArea(first, last, age, city){
+        //     this.firstName = first,
+        //     this.lastName = last, 
+        //     this.age = age,
+        //     this.city = city
+        // }
+
+        // const mySelf = new detailsArea("Nazmul", "Islam", 21, "Rangpur");
+        // const myFriend = new detailsArea("Humayra", "Shuchana", 22, "Bogura");
+        // console.log(mySelf);
+        // console.log(myFriend);
+        // console.log("My  name is", mySelf.firstName, mySelf.lastName, '. ', "I am ", mySelf.age, "years old. ", "I live in ", mySelf.city, 'city .');
+
+
+        
+
+        // function myFunction(y) {
+        // return y*y;
+        // }
+        // console.log(myFunction(5));
+
+        
+
+        class Car {
+            constructor(brand) {
+                this.carname = brand;
+            }
+            present() {
+                return 'I have a ' + this.carname;
+            }
+            }
+
+            class Model extends Car {
+            constructor(brand, mod) {
+                super(brand);
+                this.model = mod;
+            }
+            show() {
+                return this.present() + ', it is a ' + this.model;
+            }
+        }
+
+        let myCar = new Model("Ford", "Mustang");
+        console.log(myCar);
+
+    </script>
+</body>
+</html>
